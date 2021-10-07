@@ -1,0 +1,30 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+  - id: check-yaml
+  - id: trailing-whitespace
+    exclude: '\.(pdb|gro|top|sdf|offxml)$'
+  - id: debug-statements
+- repo: https://github.com/psf/black
+  rev: 21.9b0
+  hooks:
+  - id: black
+    files: ^openff
+- repo: https://github.com/PyCQA/isort
+  rev: 5.9.3
+  hooks:
+  - id: isort
+    files: ^openff
+- repo: https://github.com/PyCQA/flake8
+  rev: 3.9.2
+  hooks:
+  - id: flake8
+    files: ^openff
+- repo: https://github.com/asottile/pyupgrade
+  rev: v2.29.0
+  hooks:
+  - id: pyupgrade
+    files: ^openff/amber_ff_ports
+    exclude: openff/amber_ff_ports/_version.py|setup.py
+    args: [--py37-plus]

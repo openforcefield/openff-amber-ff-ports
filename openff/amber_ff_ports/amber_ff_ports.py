@@ -22,4 +22,4 @@ def get_forcefield_dirs_paths():
         The list of directory paths containing the SMIRNOFF files.
 
     """
-    return [resource_filename('openff.amber_ff_ports', 'offxml')]
+    return [resource_filename("openff.amber_ff_ports", "offxml")]
