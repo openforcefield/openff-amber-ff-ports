@@ -1,6 +1,10 @@
 # Open FF Amber FF Ports
 
-The current OFFXML files are downloaded from the Assets of this release: https://github.com/openforcefield/amber-ff-porting/releases/tag/0.0.1
+This repository is for _distributing_ Amber force fields in the SMIRNOFF format. The work of _doing_ this porting is found [here](https://github.com/openforcefield/amber-ff-porting)
+
+The current OFFXML files are downloaded from the Assets of [this](https://github.com/openforcefield/amber-ff-porting/releases/tag/0.0.1) release.
+
+Conda packages coming soon.
 
 #### Acknowledgements
 
