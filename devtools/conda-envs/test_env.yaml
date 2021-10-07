@@ -1,0 +1,8 @@
+name: amber-ff-ports-test
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - pytest
+  - openff-toolkit
