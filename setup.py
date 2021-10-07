@@ -29,8 +29,8 @@ setup(
     cmdclass=versioneer.get_cmdclass(),
     license='CC-BY-4.0',
     packages=find_namespace_packages(include=['openff.*']),
-    package_data={'openff/amber_ff_ports/': ["offxml/*"]
-                  },
+    package_data={'openff.amber_ff_ports/': ["offxml/*"]},
+    include_package_data=True,
     setup_requires=[] + pytest_runner,
     url='https://github.com/openforcefield/openff-amber-ff-ports',
     platforms=['Linux',
