@@ -1,5 +1,5 @@
 """
-Unit tests for the openff-amber-ff-ports package.
+Unit tests for the amber_ff_ports package.
 
 Note that exhaustive testing of the entrypoints infrastructure
 is excluded here but found in gh/openforcefield/openff-forcefields

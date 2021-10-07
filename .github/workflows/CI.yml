@@ -57,4 +57,4 @@ jobs:
       - name: Test the package
         shell: bash -l {0}
         run: |
-          pytest -v openff/amber-ff-ports/tests/
+          pytest -v openff/
