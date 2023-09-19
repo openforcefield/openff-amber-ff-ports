@@ -6,6 +6,7 @@ The current OFFXML files are downloaded from the Assets of the following release
 
 * [v0.0.1](https://github.com/openforcefield/amber-ff-porting/releases/tag/0.0.1) release.
 * [v0.0.2](https://github.com/openforcefield/amber-ff-porting/releases/tag/0.0.2) release.
+* [v0.0.3](https://github.com/openforcefield/amber-ff-porting/releases/tag/0.0.3) release.
 
 ### Installation
 
