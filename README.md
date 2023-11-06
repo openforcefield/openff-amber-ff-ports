@@ -7,6 +7,9 @@ SMIRNOFF force field files (`.offxml`) can be downloaded from the assets of the 
 * [v0.0.1](https://github.com/openforcefield/amber-ff-porting/releases/tag/0.0.1) release.
 * [v0.0.2](https://github.com/openforcefield/amber-ff-porting/releases/tag/0.0.2) release.
 * [v0.0.3](https://github.com/openforcefield/amber-ff-porting/releases/tag/0.0.3) release.
+* [v0.0.4](https://github.com/openforcefield/amber-ff-porting/releases/tag/0.0.4) release.
+
+The files included in this repository should directly match these sources.
 
 ### Installation
 
@@ -21,7 +24,7 @@ Note that since version 0.11.0 of the OpenFF Toolkit (August 2022), this package
 ```python
 >>> from openff.toolkit.typing.engines.smirnoff.forcefield import get_available_force_fields
 >>> sorted(filter(lambda f: 'ff14sb' in f, get_available_force_fields()))
-['ff14sb_0.0.1.offxml', 'ff14sb_0.0.2.offxml', 'ff14sb_0.0.3.offxml', 'ff14sb_off_impropers_0.0.1.offxml', 'ff14sb_off_impropers_0.0.2.offxml', 'ff14sb_off_impropers_0.0.3.offxml']
+['ff14sb_0.0.1.offxml', 'ff14sb_0.0.2.offxml', 'ff14sb_0.0.3.offxml', 'ff14sb_0.0.4.offxml', 'ff14sb_off_impropers_0.0.1.offxml', 'ff14sb_off_impropers_0.0.2.offxml', 'ff14sb_off_impropers_0.0.3.offxml', 'ff14sb_off_impropers_0.0.4.offxml']
 ```
 
 #### Acknowledgements
