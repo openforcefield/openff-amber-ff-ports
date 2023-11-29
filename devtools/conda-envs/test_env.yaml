@@ -5,4 +5,4 @@ dependencies:
   - python
   - pip
   - pytest
-  - openff-toolkit
+  - openff-toolkit-base
