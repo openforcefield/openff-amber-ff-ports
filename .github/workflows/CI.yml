@@ -23,6 +23,7 @@ jobs:
       matrix:
         python-version:
           - "3.12"
+          - "3.13"
         cfg:
           - os: ubuntu-latest
           - os: macOS-latest
@@ -40,4 +41,4 @@ jobs:
         run: python -m pip install -e .
 
       - name: Test the package
-        run: pytest -v openff/
+        run: python -m pytest -v openff/
