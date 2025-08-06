@@ -5,10 +5,10 @@ will be used by the OpenFF Toolkit to find the installed forcefield files.
 
 """
 
-from pkg_resources import resource_filename
+from importlib.resources import files
 
 
-def get_forcefield_dirs_paths():
+def get_forcefield_dirs_paths() -> list[str]:
     """
     Return the paths to the directories including the forcefield files.
 
@@ -18,8 +18,8 @@ def get_forcefield_dirs_paths():
 
     Returns
     -------
-    dir_paths : List[str]
+    dir_paths
         The list of directory paths containing the SMIRNOFF files.
 
     """
-    return [resource_filename("openff.amber_ff_ports", "offxml")]
+    return [(files("openff.amber_ff_ports") / "offxml").as_posix()]
