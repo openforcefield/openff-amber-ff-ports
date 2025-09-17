@@ -27,6 +27,13 @@ Note that since version 0.11.0 of the OpenFF Toolkit (August 2022), this package
 ['ff14sb_0.0.1.offxml', 'ff14sb_0.0.2.offxml', 'ff14sb_0.0.3.offxml', 'ff14sb_0.0.4.offxml', 'ff14sb_off_impropers_0.0.1.offxml', 'ff14sb_off_impropers_0.0.2.offxml', 'ff14sb_off_impropers_0.0.3.offxml', 'ff14sb_off_impropers_0.0.4.offxml']
 ```
 
+### Release history
+
+#### 2025.09.0 - September 18, 2025
+
+* The `pkg_resources` API is no longer used.
+* This project uses CalVer, specifically `YYYY.MM.MICRO`
+
 #### Acknowledgements
 
 Project based on the
