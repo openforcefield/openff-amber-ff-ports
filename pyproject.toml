@@ -38,9 +38,9 @@ fallback_version = "0.0.0"
 [tool.ruff]
 line-length = 119
 lint.extend-select = [ "I", "UP" ]
-lint.per-file-ignores."openff/amber_ff_ports/tests/test_amber_ff_ports.py" = [ "F401" ]
+lint.per-file-ignores."openff/amber_ff_ports/_tests/test_amber_ff_ports.py" = [ "F401" ]
 
 [tool.coverage]
 run.omit = [
-  "*/tests/*",
+  "*/_tests/*",
 ]
