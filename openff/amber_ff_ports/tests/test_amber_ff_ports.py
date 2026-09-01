@@ -30,6 +30,14 @@ def find_all_offxml_files():
     return file_names
 
 
+def test_version_nonzero():
+    from packaging.version import Version
+
+    from openff.amber_ff_ports import __version__
+
+    assert Version(__version__) > Version("0.0.0")
+
+
 @pytest.mark.skipif(not (has_off_toolkit), reason="Test requires OFF toolkit")
 @pytest.mark.parametrize("offxml_file_name", find_all_offxml_files())
 def test_forcefield_data_is_loadable(offxml_file_name):

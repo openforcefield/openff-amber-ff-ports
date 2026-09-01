@@ -7,10 +7,14 @@ repos:
     exclude: '\.(pdb|gro|top|sdf|offxml)$'
   - id: debug-statements
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.12.10
+  rev: v0.16.5
   hooks:
   - id: ruff-check
     files: ^openff
     args: [--fix]
   - id: ruff-format
     files: ^openff
+- repo: https://github.com/tox-dev/pyproject-fmt
+  rev: v2.29.2
+  hooks:
+    - id: pyproject-fmt
