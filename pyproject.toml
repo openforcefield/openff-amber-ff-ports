@@ -37,7 +37,7 @@ fallback_version = "0.0.0"
 
 [tool.ruff]
 line-length = 119
-lint.extend-select = [ "I", "UP" ]
+lint.extend-select = [ "E", "F", "I", "UP", "W" ]
 lint.per-file-ignores."openff/amber_ff_ports/_tests/test_amber_ff_ports.py" = [ "F401" ]
 
 [tool.coverage]
