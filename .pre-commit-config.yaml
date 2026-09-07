@@ -7,7 +7,7 @@ repos:
     exclude: '\.(pdb|gro|top|sdf|offxml)$'
   - id: debug-statements
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.16.5
+  rev: v0.16.6
   hooks:
   - id: ruff-check
     files: ^openff
@@ -15,6 +15,6 @@ repos:
   - id: ruff-format
     files: ^openff
 - repo: https://github.com/tox-dev/pyproject-fmt
-  rev: v2.29.2
+  rev: v2.29.3
   hooks:
     - id: pyproject-fmt
