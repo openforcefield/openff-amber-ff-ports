@@ -143,6 +143,7 @@ jobs:
           import importlib
           import os
           from importlib.metadata import version
+          from packaging.version import Version
 
           package = os.environ["PACKAGE"]
           module = importlib.import_module(package)
@@ -152,7 +153,7 @@ jobs:
           print(f"Module version: {module.__version__}")
           print(f"Installed version: {installed_version}")
 
-          assert version.Version(module.__version__) == version.Version(installed_version), (
+          assert Version(module.__version__) == Version(installed_version), (
             f"{module.__version__=}, {installed_version=}"
           )
           PY
