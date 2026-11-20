@@ -25,7 +25,7 @@ def find_all_offxml_files():
     file_names = []
     for dir_path in get_forcefield_dirs_paths():
         file_pattern = os.path.join(dir_path, "*.offxml")
-        file_paths = [file_path for file_path in glob.glob(file_pattern)]
+        file_paths = [*glob.glob(file_pattern)]
         file_names.extend([os.path.basename(file_path) for file_path in file_paths])
     return file_names
 
